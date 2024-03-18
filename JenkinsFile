@@ -5,7 +5,11 @@ pipeline {
         stage('Hello') {
             steps {
                 echo 'Hello World'
-                python First_proj_1.py
+                
+                script {
+                    python First_proj_1.py
+
+                }
                 
             }
         }
